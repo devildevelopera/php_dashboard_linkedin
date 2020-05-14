@@ -549,8 +549,8 @@ if(!isset($_SESSION["username"])){
                   <div class="tb-chart-heading-left">
                     <div class="tb-chart-heading-in">
                       <div class="tb-chart-heading-title">
-                        <span>Searches - Blue</span>
-                        <span>Leads - Green</span>
+                        <span>Searches - Green</span>
+                        <span>Leads - Blue</span>
                       </div>
                       <div class="tb-chart-heading-number">
                         <span>0</span>
@@ -856,7 +856,7 @@ if(!isset($_SESSION["username"])){
       data: {
         labels: dateArray,
         datasets: [{
-            label: "Click",
+            label: "Leads",
             data: countArray,
             backgroundColor: "rgba(0, 122, 255, 0.1)",
             borderColor: "#007aff",
@@ -865,8 +865,8 @@ if(!isset($_SESSION["username"])){
             pointDotRadius: 10
           },
           {
-            label: "Orders",
-            data: countArray,
+            label: "Search",
+            data: [],
             backgroundColor: "rgba(52, 199, 89, 0.1)",
             borderColor: "#34c759",
             borderWidth: 3,
