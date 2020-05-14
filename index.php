@@ -606,7 +606,7 @@ if(!isset($_SESSION["username"])){
                             <td><?php echo $item['position'] ?></td>
                             <td><?php echo $item['company'] ?></td>
                             <td><?php echo $item['location'] ?></td>
-                            <td><?php echo $item['profile'] ?></td>
+                            <td><a href="<?php echo $item['profile'] ?>"><?php echo $item['profile'] ?></a></td>
                             <td><?php echo $item['phone'] ?></td>
                             <td><?php echo $item['email'] ?></td>
                             <td><?php echo $item['url'] ?></td>
